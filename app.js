@@ -32,6 +32,11 @@ function limpiarCaja(){
 function limpiarTextoInicial(){
     // Limpiar el textarea
     document.getElementById('textAreaInput').value = '';
+    // Mostrar imagen inicial
+
+    // Quitar texto y boton
+    document.getElementById('mensajes').style.display = 'none';
+    document.getElementById('copyButton').style.display = 'none';
 }
 
 function copyToClipboard() {
