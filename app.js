@@ -33,7 +33,7 @@ function limpiarTextoInicial(){
     // Limpiar el textarea
     document.getElementById('textAreaInput').value = '';
     // Mostrar imagen inicial
-
+    document.getElementById('caja-muestra-mensajes').style.display='block';
     // Quitar texto y boton
     document.getElementById('mensajes').style.display = 'none';
     document.getElementById('copyButton').style.display = 'none';
