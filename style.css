@@ -395,21 +395,18 @@ button#desencripta {
 
     .cajas-escribir{
         width: 90%;
-        /*height: 50vh;*/
         background-color: transparent;
-        margin: 10px;
+        margin: 10px 0px;
     }
 
     .result{
-        font-size: 16px; /* Cambia el tamaño del texto */
-        font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
-        color: #0A3871; /* Cambia el color del texto */
-/*        height: 100%;*/
-    
-        width: 90%; /* Establece el ancho máximo del div */
+        font-size: 16px; 
+        font-weight:400;
+        color: #0A3871; 
+        width: 90%;
         height: auto;
-        overflow-y: auto; /* Agrega barras de desplazamiento si el contenido es demasiado grande */
-        padding: 10px; /* Añade relleno para mejorar el aspecto */
+        overflow-y: auto;
+        padding: 10px; 
     }
 
     .text1{
