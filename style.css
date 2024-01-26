@@ -188,13 +188,7 @@ button#desencripta {
         display: flex;
         flex-direction: column;
         height: auto;
-        align-items: center;
-       /*  display: inline;
-       height: 25vh;
-    
-       flex-direction: row;
-        align-items: center;*/
-    
+        align-items: center;   
     }
 
     .logo-alura > img {
@@ -256,6 +250,11 @@ button#desencripta {
         font-size: 16px; /* Cambia el tamaño del texto */
         font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
         color: #0A3871; /* Cambia el color del texto */
+    }
+
+    .miTextarea::placeholder {
+        font-size: 16px;
+        padding: 5px 20px 0px 0px;
     }
 
     .cajas-escribir{
