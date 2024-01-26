@@ -324,8 +324,6 @@ button#desencripta {
     
     body{
         font-size: 12px;
-       /* height: 25vh;*/
-        font-family: 'Inter', sans-serif;
     }
     .secciones-encripta{
         display: flex;
