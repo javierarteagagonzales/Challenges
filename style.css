@@ -1,18 +1,7 @@
-body{
+  body{
     background-color: #E5E5E5;
     height: 95vh;
     font-family: 'Inter', sans-serif;
-}
-/* .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  } */
-  
-
-html {
     margin: 0;
     padding: 0;
 
@@ -29,7 +18,7 @@ html {
 
 header{
     padding: 10px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 .logo-alura>img{
     width: 80px;
@@ -114,43 +103,19 @@ button {
     margin-right: 20px;
 }
 
-button#encripta {
+button#encripta, button#limpiar, button#copiar {
     background-color: #0A3871; /* Color de fondo */
     color: white; /* Color del texto */
     border: 1px solid #0A3871; /* Borde del botón */
-
 }
 
 button#desencripta {
     background-color: #D8DFE8; /* Color de fondo */
     color: #0A3871; /* Color del texto */
     border: 1px solid #0A3871; /* Borde del botón */
-
 }
-
-button#limpiar {
-    background-color: #0A3871; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: 1px solid #0A3871; /* Borde del botón */
-
-}
-
-button#copiar {
-    background-color: #0A3871; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: 1px solid #0A3871; /* Borde del botón */
-
-
-}
-
-
-/* 343A40
-495057
-*/
 
 .cajas-mensaje{
-
- /*   flex:25;*/
     width: 300px;
     height: 80vh;
     background-color: #ffffff;
@@ -173,12 +138,11 @@ button#copiar {
     color: #343A40;
     font-weight: bold;
     font-size: 28px;
-
 }
 
 .text2{
     display: inline-block;
-    float: center;
+    text-align: center;
     color: #495057;
     font-size: 16px;
 
@@ -191,21 +155,63 @@ button#copiar {
     align-items: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*DISEÑO RESPONSIVO */
 /* Estilos para tabletas (400px a 750px) */
-@media only screen and (min-width: 400px) and (max-width: 700px) {
-    body {
-      font-size: 14px;
-      /* Otros estilos para tabletas */
+@media only screen and (min-width: 400px) and (max-width: 750px) {
+
+
+    body{
+        font-size: 14px;
+       /* height: 25vh;*/
+        font-family: 'Inter', sans-serif;
     }
     .secciones-encripta{
-        display:inline;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+       /*  display: inline;
+       height: 25vh;
+    
+       flex-direction: row;
+        align-items: center;*/
+    
     }
+
+    .logo-alura > img {
+        width: 70px;
+        height: auto;
+    }
+
+
+ /*   .secciones-encripta{
+        display:inline;
+    }*/
     .busca{
         display: none;
     }
     .cajas-mensaje{
-        width:30%;
+        width:90%;
+        /*height: 30vh;*/
         background-color: #ffffff;
         padding: 20px;
         margin: 40px 20px 20px 20px;
@@ -216,28 +222,105 @@ button#copiar {
     }
 
 
+    .botones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    button {
+        flex: 1 0 45%; /* Establece el ancho de cada botón */
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    .informacion{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
     .miTextarea{
-        width: 90%;
-        height: 300px;
+        width: 100%;
+        max-width: 680px;
+        height: 200px;
         overflow-y: auto;
         background-color: transparent;
         border: unset;
         padding: 15px;
-      /*  text-align: left; */
-    
-    
-        font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
-        font-size: 20px; /* Cambia el tamaño del texto */
+
+        font-size: 16px; /* Cambia el tamaño del texto */
         font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
         color: #0A3871; /* Cambia el color del texto */
     }
 
     .cajas-escribir{
-        margin-left: 0px;
+        width: 90%;
+        /*height: 50vh;*/
+        background-color: transparent;
+        margin: 10px;
     }
+
+    .result{
+        font-size: 16px; /* Cambia el tamaño del texto */
+        font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
+        color: #0A3871; /* Cambia el color del texto */
+/*        height: 100%;*/
+    
+        width: 90%; /* Establece el ancho máximo del div */
+        height: 150px; /* Establece la altura máxima del div */
+        overflow-y: auto; /* Agrega barras de desplazamiento si el contenido es demasiado grande */
+        padding: 10px; /* Añade relleno para mejorar el aspecto */
+    }
+
+    .text1{
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+    .text2{
+        margin: 10px;
+        font-size: 14px; 
+    }
+
+
 }
 
-  /* Estilos para celulares (menor a 400px) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos para CELULAR (menor a 400px) */
 @media only screen and (max-width: 400px) {
     body {
     font-size: 12px;
@@ -250,7 +333,7 @@ button#copiar {
         display: none;
     }
     .cajas-mensaje{
-        width:30%
+        width:30%;
         background-color: #ffffff;
         padding: 18px;
         margin: 40px 20px 20px 20px;
@@ -261,7 +344,8 @@ button#copiar {
     }
     .miTextarea{
         width: 90%;
-        height: 300px;
+   /*     height: 300px; */
+        height:100%;
         overflow-y: auto;
         background-color: transparent;
         border: unset;
@@ -276,6 +360,8 @@ button#copiar {
     }
     .cajas-escribir{
         margin-left: 0px;
+
     }
+
 }
 }
