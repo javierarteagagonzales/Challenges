@@ -205,7 +205,7 @@ button#desencripta {
     }
     .cajas-mensaje{
         width:90%;
-        /*height: 30vh;*/
+        height: auto;
         background-color: #ffffff;
         padding: 20px;
         margin: 40px 20px 20px 20px;
@@ -271,7 +271,7 @@ button#desencripta {
 /*        height: 100%;*/
     
         width: 90%; /* Establece el ancho máximo del div */
-        height: 150px; /* Establece la altura máxima del div */
+        height: auto;
         overflow-y: auto; /* Agrega barras de desplazamiento si el contenido es demasiado grande */
         padding: 10px; /* Añade relleno para mejorar el aspecto */
     }
