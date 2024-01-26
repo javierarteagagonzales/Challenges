@@ -52,7 +52,7 @@ function copyToClipboard() {
     document.getElementById('copyMessage').innerText = 'Texto copiado al portapapeles: ' + result.innerText;
 
 }
-
+/*
 function copyOriginalTextOnEncrypt() {
     var originalText = document.getElementById('textAreaInput').value;
 
@@ -69,6 +69,7 @@ function copyOriginalTextOnEncrypt() {
         // Mostrar el texto original al encriptar
         document.getElementById('originalTextOnEncrypt').innerText = 'Texto Original:\n ' + originalText;
 }
+*/
 
 
 //Funciones para encriptar y desencriptar

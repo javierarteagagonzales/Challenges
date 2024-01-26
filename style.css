@@ -20,8 +20,9 @@ html {
 
 .secciones-encripta{
     display: flex;
+    height: 90vh;
 
-    flex-direction: row;
+ /*   flex-direction: row;*/
     align-items: center;
 
 }
@@ -71,10 +72,21 @@ input{
 
 
 .result{
-    font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
     font-size: 20px; /* Cambia el tamaño del texto */
     font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
     color: #0A3871; /* Cambia el color del texto */
+    height: 500px;
+    /*overflow-y: auto;*/
+
+    width: 300px; /* Establece el ancho máximo del div */
+    height: 480px; /* Establece la altura máxima del div */
+    overflow-y: auto; /* Agrega barras de desplazamiento si el contenido es demasiado grande */
+ /*   border: 1px solid #ccc;  Añade un borde para mejor visualización */
+    padding: 10px; /* Añade relleno para mejorar el aspecto */
+}
+
+#result{
+    white-space: pre-wrap;
 }
 
 /*texto minuscula y acentos*/
@@ -83,17 +95,20 @@ input{
 }
 
 .cajas-escribir{
-    flex: 55;
+    width: 55%;
     background-color: transparent;
     margin-left: 130px;
 }
 
 .mensajes-a{
     display: none;
+    
 }
+
+
 button {
     font-size: 12px; /* Texto mediano */
-    padding: 20px 90px; /* Padding regular */
+    padding: 20px 70px; /* Padding regular */
     cursor: pointer;
     border-radius: 20px; /* Bordes redondeados */
     margin-right: 20px;
@@ -135,10 +150,10 @@ button#copiar {
 
 .cajas-mensaje{
 
-    width: 20%;
-    height: 50vh;
+ /*   flex:25;*/
+    height: 80vh;
     background-color: #ffffff;
-    padding: 120px 40px 120px 40px;
+    padding: 20px 30px 30px 20px;
     margin: 0px 40px 10px 0px;
     border-radius: 12px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
@@ -170,7 +185,7 @@ button#copiar {
 
 /*boton copiar */
 .copiar{
-    display: flex;
+ /*   display: flex;*/
     justify-content: center;
     align-items: center;
 }
@@ -189,7 +204,7 @@ button#copiar {
         display: none;
     }
     .cajas-mensaje{
-        flex: 30;
+        width:30%;
         background-color: #ffffff;
         padding: 20px;
         margin: 40px 20px 20px 20px;
@@ -234,7 +249,7 @@ button#copiar {
         display: none;
     }
     .cajas-mensaje{
-        flex: 30;
+        width:30%
         background-color: #ffffff;
         padding: 18px;
         margin: 40px 20px 20px 20px;
