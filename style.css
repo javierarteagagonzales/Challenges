@@ -336,11 +336,6 @@ button#desencripta {
         width: 70px;
         height: auto;
     }
-
-
- /*   .secciones-encripta{
-        display:inline;
-    }*/
     .busca{
         display: none;
     }
@@ -364,7 +359,7 @@ button#desencripta {
         padding: 10px;
     }
     button {
-        flex: 1 0 45%; /* Establece el ancho de cada botón */
+        flex: 1 0 90%; /* Establece el ancho de cada botón */
         margin: 5px;
         padding: 10px;
         text-align: center;
